@@ -19,7 +19,7 @@
   9. *quit*: quit the shell.
 
 ## The Simulation Routine
-- The simulation routine carries out the instruction-level simulation of the input MIPS program. During the execution of an instruction, the simulator should take the current architectural state and modify it according to the ISA description of the instruction in the [*MIPS R4000 User Manual*](https://github.com/Alighorab/instruction-level-MIPS-simulator/blob/main/MIPSISA.pdf) (32-bit mode only) that is provided on the course website. The architectural state includes the PC, the general purpose registers, and the memory image. The state is contained in the global variables apwcified in [*shell.h*](https://github.com/Alighorab/instruction-level-MIPS-simulator/blob/main/src/shell.h)
+- The simulation routine carries out the instruction-level simulation of the input MIPS program. During the execution of an instruction, the simulator should take the current architectural state and modify it according to the ISA description of the instruction in the [*MIPS R4000 User Manual*](https://github.com/Alighorab/instruction-level-MIPS-simulator/blob/main/MIPSISA.pdf) (32-bit mode only). The architectural state includes the PC, the general purpose registers, and the memory image. The state is contained in the global variables in [*shell.h*](https://github.com/Alighorab/instruction-level-MIPS-simulator/blob/main/src/shell.h)
 
 ## My Work
 - I've implemented the function *process_instruction()* in [*sim.c*](https://github.com/Alighorab/instruction-level-MIPS-simulator/blob/main/src/sim.c).
