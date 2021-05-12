@@ -23,8 +23,7 @@
 
 ## My Work
 - I've implemented the function *process_instruction()* in [*sim.c*](https://github.com/Alighorab/instruction-level-MIPS-simulator/blob/main/src/sim.c).
-- [**Simulator design**]:
-![design](https://github.com/Alighorab/instruction-level-MIPS-simulator/blob/main/MIPS%20simulator.png)
+- [**Simulator design**]: ![design](https://github.com/Alighorab/instruction-level-MIPS-simulator/blob/main/MIPS%20simulator.png)
 
 ## Lab Files
 - In directory src/, there are the simulator files and Makefile to compile them. inputs/ directory contains input files for testing the simulator. I struggeled at first to convert them into hex code, but finally I used Qtspim simulator to convert them and extracted the log file and modify it to get the hex code. I put these files also, they're very helpful while debugging the code.
