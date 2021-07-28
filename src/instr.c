@@ -333,30 +333,3 @@ void sw(uint8_t base, uint8_t rt, int16_t imm) {
 	uint32_t address = (int32_t) CURRENT_STATE.REGS[base] + imm;
 	mem_write_32(address, CURRENT_STATE.REGS[rt]);	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

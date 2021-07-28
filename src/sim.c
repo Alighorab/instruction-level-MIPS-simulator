@@ -48,6 +48,8 @@ void rtype(uint8_t rs, uint8_t rt, uint8_t rd, uint8_t shamt, uint8_t funct) {
 		rtype_lo_hi(rs, rd, funct);
 	else if(funct == 12)
 		syscall();
+    else
+        ;
 }
 
 void itype(uint8_t op, uint8_t rs, uint8_t rt, int16_t imm) {
@@ -57,6 +59,8 @@ void itype(uint8_t op, uint8_t rs, uint8_t rt, int16_t imm) {
 		itype_arithmetic(op, rs, rt, imm);
 	else if(op >= 32 && op <= 43) 
 		mem_load_store(op, rs, rt, imm);
+    else
+        ;
 }
 
 void jtype(uint8_t op, uint32_t target) {
@@ -269,4 +273,3 @@ void mem_load_store(uint8_t op, uint8_t base, uint8_t rt, int16_t imm) {
 			return;
 	}
 }
-
